@@ -15,6 +15,6 @@ class ExtraInfo(models.Model):
     user_agreement_ibio_study = models.BooleanField(
         verbose_name="User agreement for iBiology Courses Study",
         default=False,
-        required=True
+        blank=False
     )
 
