@@ -13,7 +13,7 @@ class ExtraInfoForm(ModelForm):
             "invalid": u"You must agree in order to participate in iBiology Courses.",
         }
 
-    user_agreement_ibio_study = forms.BooleanField(required=True)
+    user_agreement_ibio_study = forms.BooleanField(required=True, label="I agree to participate in the iBiology Courses study.")
 
     class Meta(object):
         model = ExtraInfo
