@@ -16,7 +16,7 @@ class Migration(migrations.Migration):
             name='ExtraInfo',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('user_agreement_ibio_study', models.BooleanField(default=False, verbose_name=b'Fav Flick', error_messages={b'required': 'I agree to participate in the iBiology Courses study.', b'invalid': "You must agree in order to participate in iBiology Courses."})),
+                ('user_agreement_ibio_study', models.BooleanField(default=False, blank=False, verbose_name=b'User agreement for iBiology Courses Study', error_messages={b'required': 'I agree to participate in the iBiology Courses study.', b'invalid': "You must agree in order to participate in iBiology Courses."})),
                 ('user', models.OneToOneField(null=True, to=settings.AUTH_USER_MODEL)),
             ],
         ),
