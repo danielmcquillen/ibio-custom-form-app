@@ -9,7 +9,7 @@ class ExtraInfoForm(ModelForm):
     def __init__(self, *args, **kwargs):
         super(ExtraInfoForm, self).__init__(*args, **kwargs)
         self.fields['user_agreement_ibio_study'].error_messages = {
-            "required": u"I agree to participate in the iBiology Courses study.",
+            "required": u"You must agree to participate in the iBiology Courses study.",
             "invalid": u"You must agree in order to participate in iBiology Courses.",
         }
 
