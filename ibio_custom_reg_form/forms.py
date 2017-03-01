@@ -1,6 +1,7 @@
 from .models import ExtraInfo
 from django.forms import ModelForm
 from django import forms
+from django.utils.safestring import mark_safe
 
 class ExtraInfoForm(ModelForm):
     """
@@ -14,7 +15,7 @@ class ExtraInfoForm(ModelForm):
         }
 
     user_agreement_ibio_study = forms.BooleanField(required=True,
-                                                   label="I agree to participate in the iBiology Courses study.")
+                                                   label=mark_safe('I agree to participate in the iBiology Courses study. <a href="https://courses.ibiology.org/about#study">What\'s this?</a>'))
 
     class Meta(object):
         model = ExtraInfo
