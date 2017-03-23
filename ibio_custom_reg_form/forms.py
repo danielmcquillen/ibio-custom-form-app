@@ -26,5 +26,5 @@ class ExtraInfoForm(ModelForm):
 
     class Meta(object):
         model = ExtraInfo
-        fields = ('user_agreement_ibio_study')
+        fields = ('user_agreement_ibio_study',)
         #fields = ('user_agreement_ibio_study', 'slack_username')

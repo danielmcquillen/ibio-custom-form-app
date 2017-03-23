@@ -18,10 +18,12 @@ class ExtraInfo(models.Model):
         blank=False
     )
 
-    slack_username = models.CharField(
-        verbose_name="Student's Slack username",
-        default=False,
-        blank=True,
-        max_length=255
-    )
+
+    #Removing
+    #slack_username = models.CharField(
+    #    verbose_name="Student's Slack username",
+    #    default=False,
+    #    blank=True,
+    #    max_length=255
+    #)
 
