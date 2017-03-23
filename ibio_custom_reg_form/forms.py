@@ -20,9 +20,11 @@ class ExtraInfoForm(ModelForm):
     user_agreement_ibio_study = forms.BooleanField(required=True,
                                                    label=mark_safe('I agree to participate in the iBiology Courses study. <a href="https://courses.ibiology.org/about#study">What\'s this?</a>'))
 
-    slack_username = forms.CharField(required=False,
-                                     label=mark_safe('Your Slack user ID. <a href="https://courses.ibiology.org/about#slack">Why enter this?</a>'))
+    # Turns out we don't need this field
+    # I'm not sure how to back out migration of pip installed library for Open edX, so just hiding field for now.
+    #slack_username = forms.CharField(required=False, label=mark_safe('Your Slack user ID. <a href="https://courses.ibiology.org/about#slack">Why enter this?</a>'))
 
     class Meta(object):
         model = ExtraInfo
-        fields = ('user_agreement_ibio_study', 'slack_username')
+        fields = ('user_agreement_ibio_study')
+        #fields = ('user_agreement_ibio_study', 'slack_username')
