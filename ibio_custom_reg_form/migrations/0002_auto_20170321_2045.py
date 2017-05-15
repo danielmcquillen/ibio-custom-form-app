@@ -10,11 +10,6 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.AddField(
-            model_name='extrainfo',
-            name='slack_username',
-            field=models.CharField(default=False, max_length=255, verbose_name=b"Student's Slack username", blank=True),
-        ),
         migrations.AlterField(
             model_name='extrainfo',
             name='user_agreement_ibio_study',
