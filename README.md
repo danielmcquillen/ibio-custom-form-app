@@ -4,7 +4,6 @@
 # This custom form Django App adds a few fields to the signup form that we need for iBiology Courses.
 # Right now this means:
 #   1. A checkbox to agree to iBiology Courses terms
-*   2. A Slack user ID, so we can use the API to manage student's access to Slack channel
 
 # To Use:
 
