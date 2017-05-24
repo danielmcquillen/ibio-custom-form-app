@@ -18,7 +18,7 @@ class ExtraInfoForm(ModelForm):
         }
 
     user_agreement_ibio_study = forms.BooleanField(required=True,
-                                                   label=mark_safe('I agree to participate in the iBiology Courses study. <a href="https://courses.ibiology.org/about#study">What\'s this?</a>'))
+                                                   label=mark_safe('I agree to participate in the iBiology Courses study. <a href="https://courses.ibiology.org/about#study" target="_blank">What\'s this?</a>'))
 
     class Meta(object):
         model = ExtraInfo
