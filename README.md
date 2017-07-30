@@ -4,6 +4,7 @@ https://github.com/open-craft/custom-form-app
 This custom form Django App adds a few fields to the signup form that we need for iBiology Courses.
 Right now this means:
   1. A checkbox to agree to iBiology Courses terms
+  2. A text field to enter a Gender other than what's provided in dropdown.
 
 To Use:
 

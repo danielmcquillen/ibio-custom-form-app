@@ -18,3 +18,12 @@ class ExtraInfo(models.Model):
         blank=False
     )
 
+    # A field that allows the user to enter a gender other
+    # than what's provided in the dropdown.
+    gender_description = models.CharField(
+        verbose_name="User-supplied gender description",
+        max_length=255,
+        default=False,
+        blank=True
+    )
+

@@ -28,7 +28,7 @@ from setuptools import setup
 
 setup(
     name='ibio-custom-form-app',
-    version='1.0.13',
+    version='1.0.14',
     description='LMS - Custom Registration Extension Form',
     packages=['ibio_custom_reg_form'],
     install_requires=[

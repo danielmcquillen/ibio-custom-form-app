@@ -4,8 +4,6 @@ from django import forms
 from django.utils.safestring import mark_safe
 
 
-# TODO: What restrictions should be placed on Slack username?
-
 class ExtraInfoForm(ModelForm):
     """
     The fields on this form are derived from the ExtraInfo model in models.py.
@@ -20,6 +18,10 @@ class ExtraInfoForm(ModelForm):
     user_agreement_ibio_study = forms.BooleanField(required=True,
                                                    label=mark_safe('I agree to participate in the iBiology Courses study. <a href="https://courses.ibiology.org/about#study" target="_blank">What\'s this?</a>'))
 
+    gender_description = forms.CharField(required=False,
+                                         label="If none of the gender options above apply to you, please describe your gender")
+
+
     class Meta(object):
         model = ExtraInfo
-        fields = ('user_agreement_ibio_study',)
+        fields = ('user_agreement_ibio_study','gender_description')
