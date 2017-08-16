@@ -19,7 +19,8 @@ class ExtraInfoForm(ModelForm):
                                                    label=mark_safe('I agree to participate in the iBiology Courses study. <a href="https://courses.ibiology.org/about#study" target="_blank">What\'s this?</a>'))
 
     gender_description = forms.CharField(required=False,
-                                         label="If none of the gender options above apply to you, please describe your gender")
+                                         label="If none of the gender options above apply to you, please describe your gender",
+                                         max_length=200)
 
 
     class Meta(object):
